@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <!--Header Section to display header-->
+    <div style="background-color: lightgreen; height: fit-content; width: 97%; text-align: center";id = "header">
+        <h1 >Interactive Contact Form with an Inline Calculator</h1>
+        <span><i>"Calculators can only calculate - they cannot do mathematics." ~ John A. Van de Walle</i></span>
+    </div>
+
+    <div style="background-color: beige; height: fit-content; width: 97%; text-align: left";id = "content">
+        <form action="">
+            <h2>User Contact</h2>
+            Email:
+            <input type="url" name="email">
+            <br>
+            Date:
+            <input type="date" name="Tarikh">
+            <br>
+            User Satisfaction Level:
+            <input type="range" name = "satisfactionlevel"> 
+            <br>
+            <input type="submit" value="Simpan">
+        </form>
+        <div>
+        <form oninput="output.value = parseInt(num1.value) + parseInt(num2.value)">
+            <h2>Calculator</h2>
+
+            <p>Enter num1:</p>
+            <input type="number" id="num1" value="0">
+
+            <p>Enter num2:</p>
+            <input type="number" id="num2" value="0">
+
+            <p>Result:</p>
+            <output name="output" for="num1 num2"></output>
+        </form>
+        </div>
+    </div>
+    <div>
+
+    <div style="background-color: lightcyan; height: fit-content; width: 97%; text-align: center"; id = "footer">
+        <footer>
+            <p> Please contact <strong>018-2885967</strong> or email to <strong>s76084@ocean.umt.edu.my</strong> 
+                for report/complaint this website.
+                <br>&copy; 2025 Wong Cai Yi. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

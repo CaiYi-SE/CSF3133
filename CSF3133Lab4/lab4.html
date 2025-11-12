@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <style type="text/css">
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            a:link{
+                display: block;
+                font-weight: bold;
+                width: fit-content;
+                background-color: bisque;
+                color: black;
+                font-size: 24px;
+            }
+            a :visited{
+                display :block;
+                font-weight: bold;
+                color: pink;
+                background-color: #98bf21;
+                width: 120px;
+                text-align: center;
+                padding: 4px;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+            a :hover{
+                color: rgb(197, 157, 109);
+            }
+            a :active{
+                background-color: #7A881A;
+            }
+
+        </style>
+        <style>
+        body {
+            font-family: Arial;
+        }
+
+        form {
+            background-color: #f0f0f0;
+            padding: 15px;
+            width: 300px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            margin: 5px 0;
+        }
+
+        input[type="submit"] {
+            background-color: lightblue;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: deepskyblue;
+        }
+    </style>
+        
+        <title>An Inspire Responsive Page</title>
+    </head>
+    <body>
+        <header><h1 style="background-color: lightblue; height: fit-content; width: 97%; text-align: center">Welcome to My Responsive Page</h1></header>
+        <ul style="background-color: bisque; height: fit-content; width: 97%; text-align: center">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#form">Satisfaction Form</a></li>
+        </ul><br><br>
+        
+        <section id="Home">
+            <h2 style="border-bottom: 2px solid green;">Home Section</h2>
+            <article>“Don’t be scared to fail. Every failure carries a lesson that success can never teach.
+                 The moments when things don’t go as planned are not signs of weakness, but signs that you’re 
+                 trying — that you have the courage to step outside your comfort zone. 
+                 Failure is not the opposite of success; it’s a part of it. 
+                Each time you stumble, you learn, you adjust, and you grow stronger. 
+                Remember, the people who achieve the most are not the ones who never fall, but the ones 
+                who never stop getting back up. Keep believing, keep trying, and never let the fear 
+                of failure stop you from chasing what sets your soul on fire.”</article>
+            <img src="https://buildbookbuzz.com/wp-content/uploads/2020/02/Michael-Jordan-quote.png" alt="Inspire Quote" width="500" height="400">
+        </section>
+
+        <section id="video">
+            <h2 style="border-bottom: 2px solid green;">Inspire Video</h2>
+            <video width="700" height="400" controls>
+            <source src="c:\Users\MP2-4\Downloads\30Sec.mp4" type="video/mp4">
+        </video>
+        </section>
+
+        <section id="form">
+            <h2 style="border-bottom: 2px solid green;">Form Section</h2>
+            <form>
+                <label>Name:</label><br>
+                <input type="text" name="name"><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email"><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br>
+
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" name="hobby" value="reading"> Reading
+                <input type="checkbox" name="hobby" value="sports"> Sports
+                <input type="checkbox" name="hobby" value="music"> Music<br><br>
+
+                <label>User satisfaction level:</label>
+                <input type="range" name="satisfactionlevel">
+                <br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <div style="background-color: lightblue; height: fit-content; width: 97%; text-align: center">
+            <footer>
+                <p>Please contact <strong>018-2885967</strong> or email to <strong>s76084@ocean.umt.edu.my</strong>
+                for report/complaint this website. <br>
+                &copy; 2025 Wong Cai Yi. All rights reserved.
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

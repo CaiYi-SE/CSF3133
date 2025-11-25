@@ -1,0 +1,320 @@
+/* =========================
+   Variables (colors / sizes)
+   ========================= */
+:root{
+    --purple-dark: #4B0082;
+    --purple-mid: #573488;
+    --purple-light: #9c70d6;
+    --accent: #e2cdfe;
+    --text-dark: #333;
+    --muted: #cfcfcf;
+    --bg-page: #f9f9f9;
+    --card-bg: #fff;
+    --max-width: 1200px;
+}
+
+/* =========================
+   Global / Page layout
+   ========================= */
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: var(--bg-page);
+    color: var(--text-dark);
+}
+
+/* center container optional (if you want to limit width) */
+/* .container { max-width: var(--max-width); margin: 0 auto; padding: 0 16px; } */
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styled section card */
+section {
+    background-color: var(--card-bg);
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+}
+
+/* h2 with underline style */
+h2 {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #341f51;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--purple-dark);
+}
+h2 span { background: var(--card-bg); padding: 10px; }
+
+.contact-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.contact-box {
+    background: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-box h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+/* small emphasis class */
+.highlight { color: var(--purple-light); font-weight: bold; }
+
+
+/*Navigtion Bar setting*/
+    nav {
+        background-color:#4B0082;
+        width: 100%;
+    }
+
+    nav ul{
+        list-style-type: none; /*removes bullets. A nav bar does not need list markers*/
+        margin: 0;
+        padding: 0; /*removes browswe default setting*/
+        background-color: transparent;
+        overflow: visible;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    nav li{ /*horizontal alignment*/
+        float: right;
+        font-weight: 200;
+    }
+
+    nav::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    nav li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    /*change the link color on hover to black #111*/
+    nav li a:hover{
+        background-color: #9c70d6;
+    }
+
+    /*Dropdown button*/
+    .dropbtn{
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: #4B0082;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #cfcfcf;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Show dropdown list when hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+/*End of Navigation Bar Setting*/
+
+    /* Stat item animation */
+    .stat-item:hover div:first-child {
+        color:#cfcfcf;
+        transition: color 0.3s ease;
+    }
+
+    .stat-number {
+        font-size: 2.25rem; /* similar to Tailwind text-4xl */
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        display: block;
+    }
+
+    .stat-label {
+        font-size: 1.125rem; /* similar to Tailwind text-lg */
+        color: rgb(0, 0, 0);
+        text-align: center;
+        display: block;
+    }
+
+    .factbutton {
+        padding: 10px;
+        border: none;
+        color: rgb(108, 35, 177);
+        text-decoration: none;
+        text-align: center;
+        font-size: 23px;
+        cursor: pointer;
+        background-color:#e2cdfe;
+        border: 2px solid #573488 ;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background-color 0.3s;
+        font-weight: bold;
+    }
+
+    a.factbutton:hover {
+        background-color: #d1b3f0;      /* slightly darker on hover */
+        color: var(--purple-dark);      /* darker text on hover */
+        transform: translateY(-2px);
+    }
+
+    .buttoncontainer{
+        text-align: center;
+    }
+
+    /*Program button*/
+    .programbutton {
+        display: inline-block;
+        padding: 12px 28px;
+        margin: 10px;
+        border: 2px solid #573488;
+        color: #573488;
+        background-color: #e2cdfe;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.25s, color 0.25s, transform 0.12s;
+    }
+
+    .programbutton:hover {
+        background-color: #d1b3f0;
+        color: #341f51;
+        transform: translateY(-2px);
+    }
+
+    /* =========================
+   Footer
+   ========================= */
+    footer {
+        background-color: var(--purple-mid);
+        width: 100%;
+        font-size: 12px;
+        color: white;
+        font-weight: bold;
+        padding: 10px 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    /* =========================
+   Misc / Utility
+   ========================= */
+    ul { padding-left: 20px; }
+    a { color: inherit; } /* avoid default blue links */
+    img { max-width: 100%; height: auto; display: block; }
+
+    .custom-img {
+        height: 70px;
+        width: auto;
+    }
+
+    /* =========================
+    Responsive tweaks
+    ========================= */
+    @media (max-width: 600px) {
+        body { margin: 12px; }
+        nav ul { gap: 4px; flex-wrap: wrap; }
+        .factbutton { width: 100%; box-sizing: border-box; padding: 12px; }
+    }
+
+    /* ============================
+   Academic Rules Section
+   ============================ */
+    .rules-section {
+        max-width: 700px;      /* Limit the content width, keeps layout clean */
+        margin: 40px auto;     /* Center the whole section */
+        text-align: center;    /* Center all text */
+        padding: 20px;         /* Add spacing inside the section */
+    }
+
+    /* Main Title */
+    .rules-section h2 {
+        margin-bottom: 10px;   /* Space below title */
+        font-size: 28px;       /* Bigger heading */
+        color: #333;           /* Dark gray text */
+        text-align: center;
+    }
+
+    /* Subtitle */
+    .rules-section h3 {
+        margin-top: 0;         /* Remove top space */
+        color: #555;           /* Slightly lighter gray */
+    }
+
+    /* ============================
+    Download Button
+    ============================ */
+    .download-btn {
+        display: inline-block;   /* Allows padding & margin */
+        margin-top: 20px;        /* Space above button */
+        padding: 12px 25px;      /* Button size */
+        background-color: #333;  /* Button background color */
+        color: white;            /* Button text color */
+        font-size: 16px;         /* Text size */
+        border-radius: 8px;      /* Rounded corners */
+        text-decoration: none;   /* Remove underline */
+        transition: 0.3s;        /* Smooth hover animation */
+    }
+
+    /* Hover effect */
+    .download-btn:hover {
+        background-color: #555;  /* Darker color when hovered */
+    }
+

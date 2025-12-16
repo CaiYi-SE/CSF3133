@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lab 7 Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header id="home">
+        <h1>Cuernos del Paine🏔️</h1>
+    </header>
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <a href="#profile">Profile</a>
+        <a href="#intro">Introduction</a>
+        <a href="#progress">Skills</a>
+        <a href="#slide">Slide</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <!-- Main page content wrapper -->
+    <div class="page-content">
+        <!-- Profile section -->
+        <section id="profile">
+            <h2>WebPage Creator</h2>
+
+            <!-- Profile card -->
+            <div class="card">
+            <img src="CAIYI_PIC_report.png" alt="Profile Image">
+            <h2>Wong Cai Yi</h2>
+            <p>Computer Science Student | Front-End Learner</p>
+            <!-- Simple icon display -->
+            <div class="icons">
+                <span>🌐</span>
+                <span>📘</span>
+                <span>📸</span>
+            </div>
+            <!-- Personal description -->
+            <p>Age: 20 years old <br>- Fear of insects. <br>- Like quiet place -- <i>no people, no insects.</i><br>
+                Bio... <br>
+                A kind of person who still feels sleepy even after sleeping a lot... <br>
+                Dreams of becoming a rich woman --- because money solves everything... <br>
+                <strong>Bathing, Eating, Shopping, Sleeping </strong> are my ways to calm down <br>
+                when I facing a problem in my lifeee...
+            </p>
+        </div>
+        </section>
+
+        <!-- Introduction section -->
+        <section id="intro">
+            <article>
+                <h2>Introduction</h2>
+                <h3>Where to find them?</h3>
+                Torres del Paine National Park, Chile <br>
+
+                <h3>What are they?</h3>
+                The Cuernos del Paine or 'Paine horns' is a collective name given to a set of 
+                spiky granite peaks in <b>Torres del Paine National Park</b>, all of which stand at over 2000 metres high. <br><br>
+
+                The spikes have fittingly sharp names: to the north, the <i>Aleta de Tiburón</i> (Shark's Fin), 
+                to the east, from north to south, <i>Fortaleza</i> (Fortress), <i>La Espada</i> (The Sword), <i>La Hoja</i> 
+                (The Blade), <i>La Máscara</i> (The Mask), <i>Cuerno Norte</i> (North Horn), and <i>Cuerno Principal</i> (Main Horn). <br><br>
+
+                The Cuernos del Paine also lend their name to one of the park's 'refugios' or 'lodges', 
+                Refugio and Camping Los Cuernos. <br>
+
+                <h3>How can I see them?</h3>
+                The Cuernos are located in the middle of the W Trek, the most popular route for trekking 
+                in Torres del Paine National Park. Best views are from the top of <b>Valle Frances</b>, 
+                often hiked on day 3 of a traditional W Trek. <br>
+            </article>
+        </section>
+
+        <!-- Progress bar section (JavaScript interaction) -->
+        <section id="progress">
+            <h2>Popular Level of Cuernos del Paine</h2>
+            <!-- Progress bar container -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div><br>
+            <!-- Button triggers JavaScript function -->
+            <button class="progress-button" onclick="loadProgress()">Load Level</button>
+        </section>
+
+        <!-- Image slideshow section -->
+        <section id="slide">
+            <h2>Image of Cuernos del Paine</h2>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+            
+            <!-- Slide 1 -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="cuernosdelpaine1.jpg" style="width:100%">
+            <div class="text">The View of Cuernos del Paine</div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="View-of-the-Horns-Left.jpg" style="width:100%">
+            <div class="text">The Left View of Cuernos del Paine</div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="trekking.jpg" style="width:100%">
+            <div class="text">Trekking Cuernos del Paine</div>
+            </div>
+
+            </div>
+            <br>
+            <!-- Slideshow dots -->
+            <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            </div>
+        </section>
+
+        <!-- FAQ collapsible section -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <!-- Collapsible button -->
+            <button type="button" class="collapsible">Read Before You Go: Booking, Timing & Weather</button>
+            <!-- Hidden collapsible content -->
+            <div class="content">
+            <h3>Do I need to book accommodation in advance to see the Cuernos?</h3>
+            <strong>Absolutely, yes.</strong> All accommodation—including campsites and refugios—along the 
+            W and O circuits (like Refugio Los Cuernos) must be booked well in advance, 
+            sometimes 6-12 months ahead, especially for high season. 
+            <br>
+            <h3>When is the best time of year to visit?</h3>
+            The <strong>High Season (October to April)</strong> offers the warmest weather, 
+            longest daylight hours, and fully operational services. The peak of summer 
+            (December-February) is the busiest. <strong>Shoulder Seasons (October-November and March-April)</strong> 
+            offer a good balance of weather, fewer crowds, and lower prices.
+            <br>
+            <h3>What is the weather like near the Cuernos?</h3>
+            <strong>Weather in Patagonia is notoriously unpredictable.</strong> Expect strong winds, especially in summer, 
+            and the possibility of experiencing all four seasons in a single day (sunshine, rain, and even snow). 
+            Layered, waterproof, and windproof clothing is essential.
+            </div>
+        </section>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

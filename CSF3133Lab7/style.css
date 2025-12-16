@@ -1,0 +1,301 @@
+/*header 1*/
+h1{
+    text-align: center;
+    color: #000b36;
+}
+
+/* Login Card */
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(207, 233, 255, 0.80);
+    padding: 25px 65px 25px 40px;
+    width: 450px;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+.form-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-container label {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Inputs */
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 15px 0;
+
+    border: 1px solid #8fa8cf;
+    border-radius: 5px;
+}
+
+/* Button */
+.form-container button {
+    width: 104%;
+    padding: 10px;
+
+    background-color: rgb(70, 130, 180);
+    color: white;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: rgb(50, 110, 160);
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 2rem;
+    color: #000000;
+    background-color: #c0ceec;
+    border-radius: 100px;
+}
+
+
+.image-container {
+    position: relative; /* Sets the positioning context for any absolutely positioned children */
+    height: 100vh;/* Sets the height of the container to 100% of the viewport height */
+    width: 100%;/* Ensures the container spans the full width of its parent */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion, cropping if necessary */
+}
+
+/*Side navigation*/
+.side-nav {
+    position: fixed; /* Fixes the navigation bar in place relative to the viewport */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 180px;
+    background-color: #204264;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column; /* Stacks the child items vertically */
+}
+.side-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-left: 4px solid transparent;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.side-nav a:hover {
+    background-color: #2c3e50;
+    border-left: 4px solid #f39c12;
+}
+
+section {
+    padding: 50px;
+    margin: 20px 0;
+    background-color: #ced8ee;
+    border-radius: 10px;
+    /* Adds a subtle shadow effect for depth and separation from the background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    /* Removes the default top margin from the <h2> element within the section */
+    /* This ensures the heading is flush with the top padding of the section */
+    margin-top: 0;
+}
+
+/* Slideshow */
+/* Hides the slide by default. JavaScript will typically manage which slide is shown. */
+.mySlides {display: none;}
+
+/* Aligns the image vertically to the middle of the line box. Useful for inline elements. */
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin:auto; /* Centers the slideshow container horizontally on the page */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 5px;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  left: 25%;
+  text-align: center;
+  background-color: #002f3a;
+  border-radius: 50px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* Profile Card */
+.profile-section {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    /* Ensures the image covers the entire 120x120 area without distortion, cropping if needed */
+    object-fit: cover;
+    /* Adds space below the image, separating it from the heading/text */
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #666;
+    /* Makes the paragraph text slightly smaller than the base font size */
+    font-size: 0.95rem;
+}
+
+h3{
+    background-color: #8fa8cf;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Progress Bar */
+.progress-section {
+    margin-left: 180px;
+    padding: 40px;
+}
+
+
+.progress-container {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #8fa8cf;
+}
+
+.progress-button{
+    padding: 5px;
+    border-radius: 30px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Collapsible Section */
+.container {
+    width: 50%;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* Adds a subtle shadow for a lifted effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible-section {
+    margin-left: 180px;
+    padding: 40px;
+}
+
+.collapsible {
+    background-color: #0f263e;
+    color: white;
+    /* Changes the cursor to a pointer hand when hovering, indicating interactivity */
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.page-content {
+    /* Creates space on the left for the side navigation, similar to the section margin */
+    margin-left: 170px;
+    padding: 20px;
+}
+
+.content{
+    display: none;
+}
